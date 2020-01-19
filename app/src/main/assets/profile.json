@@ -1,0 +1,13 @@
+{
+  "success": {
+    "id": 24,
+    "name": "luis",
+    "surname": "muñoz",
+    "email": "maxi@maxi.com",
+    "role": "U",
+    "email_verified_at": null,
+    "active": 0,
+    "created_at": "2019-10-14 14:12:10",
+    "updated_at": "2019-10-17 15:46:44"
+  }
+}

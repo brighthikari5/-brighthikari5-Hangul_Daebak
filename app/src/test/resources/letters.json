@@ -1,0 +1,275 @@
+[
+  {
+    "id": 1,
+    "letter": "ㅏ",
+    "translation": "a",
+    "is_vowel": 1,
+    "description": "The sound is similar to a as in Ah"
+  },
+  {
+    "id": 2,
+    "letter": "ㅑ",
+    "translation": "ya",
+    "is_vowel": 1,
+    "description": "The sound is similar to ya as in yard"
+  },
+  {
+    "id": 3,
+    "letter": "ㅓ",
+    "translation": "eo",
+    "is_vowel": 1,
+    "description": "The sound is similar to eo as in cut"
+  },
+  {
+    "id": 4,
+    "letter": "ㅕ",
+    "translation": "yeo",
+    "is_vowel": 1,
+    "description": "The sound is similar yeo as in just"
+  },
+  {
+    "id": 5,
+    "letter": "ㅗ",
+    "translation": "o",
+    "is_vowel": 1,
+    "description": "The sound is similar to o as in order"
+  },
+  {
+    "id": 6,
+    "letter": "ㅛ",
+    "translation": "yo",
+    "is_vowel": 1,
+    "description": "The sound is similar to yo as in Yoda"
+  },
+  {
+    "id": 7,
+    "letter": "ㅜ",
+    "translation": "oo",
+    "is_vowel": 1,
+    "description": "The sound is similar to oo as un Oolong"
+  },
+  {
+    "id": 8,
+    "letter": "ㅠ",
+    "translation": "yoo",
+    "is_vowel": 1,
+    "description": "The sound is similar yoo as un you"
+  },
+  {
+    "id": 9,
+    "letter": "ㅡ",
+    "translation": "eu",
+    "is_vowel": 1,
+    "description": "The sound is similar to eu in good"
+  },
+  {
+    "id": 10,
+    "letter": "ㅣ",
+    "translation": "i",
+    "is_vowel": 1,
+    "description": "The sound is similar to i as in easy"
+  },
+  {
+    "id": 11,
+    "letter": "ㅐ",
+    "translation": "ae",
+    "is_vowel": 1,
+    "description": "The sound is similar to ae as in add"
+  },
+  {
+    "id": 12,
+    "letter": "ㅒ",
+    "translation": "yae",
+    "is_vowel": 1,
+    "description": "The sound is similar to yae as in yam"
+  },
+  {
+    "id": 13,
+    "letter": "ㅔ",
+    "translation": "ae",
+    "is_vowel": 1,
+    "description": "The sound is similar to ae as in editor"
+  },
+  {
+    "id": 14,
+    "letter": "ㅖ",
+    "translation": "yae",
+    "is_vowel": 1,
+    "description": "The sound is similar to yae as un Yeah"
+  },
+  {
+    "id": 15,
+    "letter": "ㅚ",
+    "translation": "oi",
+    "is_vowel": 1,
+    "description": "The sound is similar to oi as in wait"
+  },
+  {
+    "id": 16,
+    "letter": "ㅙ",
+    "translation": "oe",
+    "is_vowel": 1,
+    "description": "The sound is similar to oe as in wagon"
+  },
+  {
+    "id": 17,
+    "letter": "ㅟ",
+    "translation": "we",
+    "is_vowel": 1,
+    "description": "The sound is similar to we as in We"
+  },
+  {
+    "id": 18,
+    "letter": "ㅞ",
+    "translation": "wae",
+    "is_vowel": 1,
+    "description": "The sound is similar to wae as in weather"
+  },
+  {
+    "id": 19,
+    "letter": "ㅢ",
+    "translation": "ui",
+    "is_vowel": 1,
+    "description": "The sound is similar to ui as in wisdom"
+  },
+  {
+    "id": 20,
+    "letter": "ㅝ",
+    "translation": "weo",
+    "is_vowel": 1,
+    "description": "The sound is similar to weo as in won"
+  },
+  {
+    "id": 21,
+    "letter": "ㄱ",
+    "translation": "g",
+    "is_vowel": 0,
+    "description": "The sound is similar to g as in god"
+  },
+  {
+    "id": 22,
+    "letter": "ㄴ",
+    "translation": "n",
+    "is_vowel": 0,
+    "description": "The sound is similar to n as in near"
+  },
+  {
+    "id": 23,
+    "letter": "ㄷ",
+    "translation": "d",
+    "is_vowel": 0,
+    "description": "The sound is similar to d as in do"
+  },
+  {
+    "id": 24,
+    "letter": "ㄹ",
+    "translation": "l",
+    "is_vowel": 0,
+    "description": "The sound is similar to l as in filling"
+  },
+  {
+    "id": 25,
+    "letter": "ㅁ",
+    "translation": "m",
+    "is_vowel": 0,
+    "description": "The sound is similar to m as in man"
+  },
+  {
+    "id": 26,
+    "letter": "ㅂ",
+    "translation": "b",
+    "is_vowel": 0,
+    "description": "The sound is similar to b as in bad"
+  },
+  {
+    "id": 27,
+    "letter": "ㅅ",
+    "translation": "s",
+    "is_vowel": 0,
+    "description": "The sound is similar to s as in astronaut"
+  },
+  {
+    "id": 28,
+    "letter": "ㅇ",
+    "translation": "ng",
+    "is_vowel": 0,
+    "description": "The sound is similar to ng as in bang"
+  },
+  {
+    "id": 29,
+    "letter": "ㅈ",
+    "translation": "j",
+    "is_vowel": 0,
+    "description": "The sound is similar to j as in jail"
+  },
+  {
+    "id": 30,
+    "letter": "ㅊ",
+    "translation": "ch",
+    "is_vowel": 0,
+    "description": "The sound is similar to ch as in chain"
+  },
+  {
+    "id": 31,
+    "letter": "ㅋ",
+    "translation": "k",
+    "is_vowel": 0,
+    "description": "The sound is similar to k as in kong"
+  },
+  {
+    "id": 32,
+    "letter": "ㅌ",
+    "translation": "t",
+    "is_vowel": 0,
+    "description": "The sound is similar to t as in two"
+  },
+  {
+    "id": 33,
+    "letter": "ㅍ",
+    "translation": "p",
+    "is_vowel": 0,
+    "description": "The sound is similar to p as in pool"
+  },
+  {
+    "id": 34,
+    "letter": "ㅎ",
+    "translation": "h",
+    "is_vowel": 0,
+    "description": "The sound is similar to h as in hat"
+  },
+  {
+    "id": 35,
+    "letter": "ㄲ",
+    "translation": "gg",
+    "is_vowel": 0,
+    "description": "The sound is similar to gg as in great"
+  },
+  {
+    "id": 36,
+    "letter": "ㅃ",
+    "translation": "bb",
+    "is_vowel": 0,
+    "description": "The sound is similar to bb as in brain"
+  },
+  {
+    "id": 37,
+    "letter": "ㅆ",
+    "translation": "ss",
+    "is_vowel": 0,
+    "description": "The sound is similar to ss as in smile"
+  },
+  {
+    "id": 38,
+    "letter": "ㅉ",
+    "translation": "jj",
+    "is_vowel": 0,
+    "description": "The sound is similar to jj as in joy"
+  },
+  {
+    "id": 39,
+    "letter": "ㄸ",
+    "translation": "dd",
+    "is_vowel": 0,
+    "description": "The sound is similar to dd as desk"
+  }
+]

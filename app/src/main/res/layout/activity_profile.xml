@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.profile.UserProfileActivity">
+
+    <include
+        android:id="@+id/appBar"
+        layout="@layout/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMenu"/>
+
+    <TextView
+        android:id="@+id/studentProfile"
+        style="@style/TextInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/profile"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBar" />
+
+
+    <TextView
+        android:id="@+id/profileName"
+        style="@style/TextInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/name"
+        android:textStyle="bold|italic"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/studentProfile" />
+
+
+    <TextView
+        android:id="@+id/profileNameResponse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toEndOf="@+id/profileName"
+        app:layout_constraintTop_toBottomOf="@+id/studentProfile"
+        tools:text="Valeria"
+        android:layout_marginStart="15dp"
+        style="@style/TextInformation"
+        />
+
+
+    <TextView
+        android:id="@+id/profileSurname"
+        style="@style/TextInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/surname"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileName" />
+
+
+    <TextView
+        android:id="@+id/profileSurnameResponse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        style="@style/TextInformation"
+        tools:text="Valeria"
+        app:layout_constraintStart_toEndOf="@+id/profileSurname"
+        app:layout_constraintTop_toBottomOf="@+id/profileNameResponse"
+        />
+
+    <TextView
+        android:id="@+id/profileMail"
+        style="@style/TextInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/prompt_email"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileSurname" />
+
+
+    <TextView
+        android:id="@+id/profileMailResponse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toEndOf="@+id/profileMail"
+        app:layout_constraintTop_toBottomOf="@+id/profileSurnameResponse"
+        style="@style/TextInformation"
+        tools:text="Valeria"
+
+        />
+
+
+    <TextView
+        android:id="@+id/profileCreation"
+        style="@style/TextInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/accountCreated"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileMail" />
+
+
+    <TextView
+        android:id="@+id/profileCreationResponse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toEndOf="@+id/profileCreation"
+        app:layout_constraintTop_toBottomOf="@+id/profileMailResponse"
+        style="@style/TextInformation"
+        tools:text="Valeria"
+        />
+
+    <ImageView
+        android:id="@+id/student"
+        android:layout_width="421dp"
+        android:layout_height="285dp"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/students"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileCreationResponse" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

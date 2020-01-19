@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp" tools:context=".presentation.logIn.LogInActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="70dp"
+        android:maxHeight="150dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/koreanflag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewPresentation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPresentation"
+        style="@style/TextInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:text="@string/presentation1"
+        android:textSize="30sp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewNew"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewInformation"
+        style="@style/TextInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/presentationline"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="@+id/textViewPresentation"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPresentation" />
+
+    <TextView
+        android:id="@+id/textViewNew"
+        style="@style/TextInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/presentation2"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPresentation"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSignIn"/>
+
+    <Button
+        android:id="@+id/buttonSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow_button_layer_list"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/buttonSignIn"
+        android:textColor="@color/colorBlue"
+        android:textStyle="bold"
+      android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNew" />
+
+
+    <TextView
+        android:id="@+id/textViewAlready"
+        style="@style/TextInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/presentation3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSignIn"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerEditTexts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@id/buttonLogIn"
+        app:layout_constraintTop_toBottomOf="@id/textViewAlready">
+
+        <TextView
+            android:id="@+id/textViewEmailLogin"
+            style="@style/TextInformation"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="Email: "
+            app:layout_constraintBottom_toBottomOf="@+id/editTextEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/textViewPasswordLogin"/>
+
+
+        <EditText
+            android:id="@+id/editTextEmailLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewEmailLogin"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textViewPasswordLogin"
+            style="@style/TextInformation"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="Password: "
+            app:layout_constraintBottom_toBottomOf="@+id/editTextPasswordContainer"
+            app:layout_constraintEnd_toStartOf="@id/editTextPasswordContainer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEmailLogin" />
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/editTextPasswordContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewPasswordLogin"
+            app:layout_constraintTop_toBottomOf="@+id/editTextEmailLogin"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:inputType="textPassword"
+                android:id="@+id/editTextPasswordLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/texViewPassRules"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/passwordRules"
+        android:textColor="@color/colorAccent"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLogIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <Button
+        android:id="@+id/buttonLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/shadow_button_layer_list"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/buttonLogin"
+        android:textColor="@color/colorBlue"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerEditTexts" />
+
+    <TextView
+        tools:text="ERRORRRRRRR"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:id="@+id/textViewWarninglogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/buttonLogIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

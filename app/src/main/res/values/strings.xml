@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">HangulDaebak</string>
+
+    <string name="presentation">Welcome to Hangul Daebak!\n\Your app to learn Hangul, the Korean alphabet.
+        With fun tests you will learn at your own pace and having fun!\n\You will also have your own korean teacher!\n\ARE YOU READY?</string>
+    <string name="presentation1"> HANGUL DAEBAK</string>
+    <string name="presentationline">Lets learn the korean alphabet!</string>
+    <string name="presentation2">Are you new? Please sign in! :)</string>
+    <string name="presentation3">Already a member? Please login!</string>
+    <string name="buttonSignIn">Sign in!</string>
+    <string name="buttonLogin">Log in</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="createAccount">Create your account!</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="buttonSend">Send!</string>
+    <string name="title_activity_example">ExampleActivity</string>
+    <string name="menuActivityWelcome">Hi again! Please choose what you want to do from the menu below!</string>
+    <string name="buttonStudy">STUDY</string>
+    <string name="buttonQuiz">QUIZ</string>
+    <string name="buttonQuizTeacher">TEACHER QUIZ</string>
+    <string name="passwordRules">Password must be at least 8 letters including a number, a lowercase letter and a Uppercase letter</string>
+    <string name="annyeong">안녕!</string>
+    <string name="title_activity_test_action_bar">TestActionBarActivity</string>
+    <string name="splash">Hangul Daebak</string>
+    <string name="welcomeStudy">What do you want to study today?</string>
+    <string name="vowels">VOWELS</string>
+    <string name="consonants">CONSONANTS</string>
+    <string name="allLetters">ALL LETTERS</string>
+    <string name="translation">Translation: </string>
+    <string name="description">Description: </string>
+    <string name="descriptionMenuQuiz">Welcome to the Quiz menu :) \n\Here you can take quizes to study the Korean Language! The quizes consist of 10 questions regarding all the alphabet
+    There is only one right answer. \n\Are you ready?
+    </string>
+    <string name="descriptionMenuQuizTeacher">Welcome to the Teachers Quiz menu :) \n\Here you can take quizes to study the Korean Language! The quizes consist of 10 questions choosen by your teacher regarding all the alphabet
+    There is only one right answer. \n\Are you ready?</string>
+    <string name="startQuiz">START QUIZ!</string>
+    <string name="startQuizTeacher">START TEACHERS QUIZ!</string>
+    <string name="sending_quiz_to_server">Sending Quiz to server...</string>
+    <string name="profile">STUDENT PROFILE</string>
+    <string name="accountCreated">Account created</string>
+</resources>

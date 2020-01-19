@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.signIn.SignInActivity">
+
+
+
+    <TextView
+        android:id="@+id/textViewPresentation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:paddingTop="60dp"
+        android:paddingBottom="40dp"
+        android:text="@string/createAccount"
+        android:textColor="@color/colorBlue"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/textViewEmail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        style="@style/TextInformation"
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:gravity="center"
+        android:text="@string/prompt_email"
+        app:layout_constraintBottom_toBottomOf="@id/editTextEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPresentation"
+        />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewEmail"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPresentation"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        style="@style/TextInformation"
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:gravity="center"
+        android:text="@string/name"
+        app:layout_constraintBottom_toBottomOf="@id/editTextName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewEmail" />
+
+    <EditText
+        style="@style/TextInformation"
+        android:id="@+id/editTextName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewName"
+        app:layout_constraintTop_toBottomOf="@id/editTextEmail"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/textViewSurname"
+        style="@style/TextInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:gravity="center"
+        android:text="@string/surname"
+        app:layout_constraintBottom_toBottomOf="@id/editTextSurname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextName" />
+
+    <EditText
+        android:id="@+id/editTextSurname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewSurname"
+        app:layout_constraintTop_toBottomOf="@id/editTextName"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        style="@style/TextInformation"
+        android:id="@+id/textViewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:gravity="center"
+        android:text="@string/prompt_password"
+        app:layout_constraintBottom_toBottomOf="@id/editTextPasswordContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSurname" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editTextPasswordContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSurname"
+        app:passwordToggleEnabled="true"
+        android:layout_marginStart="10dp">
+
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/texViewPassRulesSignin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/passwordRules"
+        android:textColor="@color/colorAccent"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSend"
+        />
+
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/buttonSend"
+        android:textColor="@color/colorBlue"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/editTextPasswordContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/shadow_button_layer_list"/>
+
+
+    <TextView
+        android:id="@+id/textViewWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/colorRed"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonSend"
+        tools:text="ERRORRRRRRR" />
+
+    <ImageView
+        android:id="@+id/cutehello"
+        android:layout_width="336dp"
+        android:layout_height="138dp"
+        android:layout_marginEnd="36dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="200dp"
+        android:maxHeight="150dp"
+        android:src="@drawable/hello"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWarning" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

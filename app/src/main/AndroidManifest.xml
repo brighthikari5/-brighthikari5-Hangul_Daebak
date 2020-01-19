@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="valeriamoscoso.ioc.hanguldaebak">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".presentation.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".presentation.profile.UserProfileActivity"></activity>
+        <activity android:name=".presentation.menuQuizTeacher.MenuQuizTeacherActivity" />
+        <activity android:name=".presentation.menuChooseQuiz.MenuChooseQuizActivity" />
+        <activity android:name=".presentation.menuQuiz.MenuQuizActivity" />
+        <activity android:name=".presentation.quiz.QuizActivity" />
+        <activity
+            android:name="valeriamoscoso.ioc.example.presentation.example.ExampleActivity"
+            android:label="@string/title_activity_example"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".presentation.splash.SplashActivity"
+            android:label="@string/splash"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".presentation.logIn.LogInActivity" />
+        <activity android:name=".presentation.signIn.SignInActivity" />
+        <activity android:name=".presentation.menu.MenuActivity" />
+        <activity android:name=".presentation.studyLetters.StudyLettersActivity" />
+        <activity android:name=".presentation.study.StudyActivity" />
+    </application>
+
+</manifest>
